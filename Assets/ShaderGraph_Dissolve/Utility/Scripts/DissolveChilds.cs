@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 namespace DissolveExample
@@ -8,6 +8,7 @@ namespace DissolveExample
     {
         // Start is called before the first frame update
         List<Material> materials = new List<Material>();
+
         bool PingPong = false;
         void Start()
         {
@@ -28,8 +29,8 @@ namespace DissolveExample
         void Update()
         {
 
-            var value = Mathf.PingPong(Time.time * 0.5f, 1f);
-            SetValue(value);
+            //var value = Mathf.PingPong(Time.time * 0.5f, 1f);
+           
         }
 
         //IEnumerator enumerator()
@@ -43,6 +44,21 @@ namespace DissolveExample
         //    //    yield return new WaitForEndOfFrame();
         //    //}
         //}
+
+        public void StartHideWall()
+        {
+            StartCoroutine(DisappearanceWall());
+            GetComponent<Collider>().enabled = false;
+        }
+
+        public IEnumerator DisappearanceWall()
+        {
+            for (float t = 0; t < 1; t += Time.deltaTime)
+            {
+                SetValue(t);
+                yield return null;
+            }
+        }
 
         public void SetValue(float value)
         {
