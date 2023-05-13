@@ -7,6 +7,10 @@ public class CameraController : MonoBehaviour
     private float mouseX;
     private float mouseY;
 
+    [Header("Стрельба")]
+    [SerializeField] private GameObject _prefabBullet;
+    [SerializeField] private float bulletSpeed = 100f;
+
     public Transform player;
 
 
@@ -27,6 +31,12 @@ public class CameraController : MonoBehaviour
     {
         Look();
         RangeToUseItems();
+    }
+
+
+    private void Update()
+    {
+        Fire();
     }
 
     public void CursorLock()
@@ -70,5 +80,20 @@ public class CameraController : MonoBehaviour
 
 
         player.Rotate(Vector3.up * mouseX);
+    }
+
+    /// <summary>
+    /// Создает префаб пули, при нажатии левой кнопки мыши
+    /// </summary>
+    void Fire()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Transform trans = this.transform;
+            GameObject newBullet = Instantiate(_prefabBullet, trans.position + new Vector3(0, -0.5f, 0), trans.rotation) as GameObject;
+            Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
+
+            bulletRB.velocity = this.transform.forward * bulletSpeed; // Используем velocity, вместе AddForce, чтобы пули не тянуло гравитацией вниз
+        }
     }
 }

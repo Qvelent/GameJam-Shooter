@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravity = -9.8f;
     [SerializeField] private float jumpForce = 5.0f;
 
+    
     [Header("Скорость нашего чара")]
     [SerializeField] private float speed = 1f;
     [SerializeField] private float runSpeed = 3f;
@@ -28,7 +29,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
-       
+        
         PlayerReset();
     }
 

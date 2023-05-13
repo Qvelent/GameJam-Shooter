@@ -355,6 +355,8 @@ MonoBehaviour:
   verticalVelocity: 0
   gravity: -9.8
   jumpForce: 5
+  _prefabBullet: {fileID: 0}
+  bulletSpeed: 100
   speed: 2
   runSpeed: 6
 --- !u!1 &368889980
@@ -2060,6 +2062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03ddacac029c90459d63a092e9208e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _prefabBullet: {fileID: 5919161806253430353, guid: 0cf6d0b0c8a2128429f4f19f105def17, type: 3}
+  bulletSpeed: 100
   player: {fileID: 151002771}
   sensivityMouse: 200
 --- !u!1 &1279925263
