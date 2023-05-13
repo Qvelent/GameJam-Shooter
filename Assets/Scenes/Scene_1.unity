@@ -13063,6 +13063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clown
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dcd637e2d96552d40a40b37ee13b342a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: dcd637e2d96552d40a40b37ee13b342a, type: 3}
       propertyPath: m_Controller
       value: 
@@ -16688,7 +16692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8050533628979116425}
   m_LocalRotation: {x: 0, y: -0.00096568465, z: -0, w: 0.9999996}
-  m_LocalPosition: {x: 0.5999079, y: 0.14018536, z: 0.7246538}
+  m_LocalPosition: {x: 0.5999079, y: 0.1401854, z: 0.7246538}
   m_LocalScale: {x: 0.17949396, y: 0.35636356, z: -0.41004553}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16709,6 +16713,7 @@ GameObject:
   - component: {fileID: 8050533628979116430}
   - component: {fileID: 8050533628979116431}
   - component: {fileID: 8050533628979116428}
+  - component: {fileID: 8050533628979116432}
   m_Layer: 0
   m_Name: BtnTV
   m_TagString: Untagged
@@ -16731,18 +16736,6 @@ MonoBehaviour:
   buttonPress:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChangeDisplay, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1388512413}
         m_TargetAssemblyTypeName: DissolveExample.DissolveChilds, Assembly-CSharp
         m_MethodName: StartHideWall
@@ -16803,18 +16796,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Press
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 8050533630159336782}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -16851,7 +16832,46 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 8050533628979116432}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Press
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8050533628979116428}
+        m_TargetAssemblyTypeName: ButtonPhysic, Assembly-CSharp
+        m_MethodName: SetEmissionMax
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8050533628979116428}
+        m_TargetAssemblyTypeName: ButtonPhysic, Assembly-CSharp
+        m_MethodName: SetEmissionMin
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   text: {fileID: 889332240}
+  _renderers:
+  - {fileID: 8050533628979116430}
+  - {fileID: 7986369498777476395}
 --- !u!33 &8050533628979116429
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16915,6 +16935,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &8050533628979116432
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050533628979116425}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d050f57f6423b264a82e2aa5878cf1e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &8050533630159336771
 SpriteRenderer:
   m_ObjectHideFlags: 0
