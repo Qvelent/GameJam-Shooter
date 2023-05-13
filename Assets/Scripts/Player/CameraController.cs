@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
     [Header("Стрельба")]
     [SerializeField] private GameObject _prefabBullet;
     [SerializeField] private float bulletSpeed = 100f;
+    [SerializeField] private Collider _playerColider;
 
     public Transform player;
 
@@ -91,6 +92,7 @@ public class CameraController : MonoBehaviour
         {
             Transform trans = this.transform;
             GameObject newBullet = Instantiate(_prefabBullet, trans.position + new Vector3(0, -0.5f, 0), trans.rotation) as GameObject;
+            Physics.IgnoreCollision(_playerColider, newBullet.GetComponent<Collider>());
             Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
 
             bulletRB.velocity = this.transform.forward * bulletSpeed; // Используем velocity, вместе AddForce, чтобы пули не тянуло гравитацией вниз
