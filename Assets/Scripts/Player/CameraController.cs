@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private GameObject _prefabBullet;
     [SerializeField] private float bulletSpeed = 100f;
     [SerializeField] private Collider _playerColider;
+    [SerializeField] private AudioSource _shotSound;
 
     public Transform player;
 
@@ -94,6 +95,8 @@ public class CameraController : MonoBehaviour
             GameObject newBullet = Instantiate(_prefabBullet, trans.position + new Vector3(0, -0.5f, 0), trans.rotation) as GameObject;
             Physics.IgnoreCollision(_playerColider, newBullet.GetComponent<Collider>());
             Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
+            _shotSound.pitch = Random.Range(0.8f, 1.2f);
+            _shotSound.Play();
 
             bulletRB.velocity = this.transform.forward * bulletSpeed; // Используем velocity, вместе AddForce, чтобы пули не тянуло гравитацией вниз
         }

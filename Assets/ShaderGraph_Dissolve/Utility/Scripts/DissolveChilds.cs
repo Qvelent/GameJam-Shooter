@@ -56,7 +56,7 @@ namespace DissolveExample
             for (float t = 0; t < 1; t += Time.deltaTime)
             {
                 SetValue(t);
-                yield return null;
+                yield return new WaitForSeconds(0.02f);
             }
         }
 
