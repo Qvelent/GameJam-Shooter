@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] float _friction = 1f;
     [SerializeField] float _jumpPower = 5f;
     [SerializeField] bool _grounded = false;
+    [SerializeField] private bool _isWalking = false;
+    private bool _isUse = false;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -23,6 +25,24 @@ public class Player : MonoBehaviour
             {
                 _rigidbody.AddForce(0f, _jumpPower, 0f, ForceMode.VelocityChange);
             }
+        }
+
+        if (_rigidbody.velocity.x != 0)
+        {
+            _isWalking = true;
+        }
+        else
+        {
+            _isWalking = false;
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            _isUse = true;
+            
+        }
+        else
+        {
+            _isUse = false;
         }
     }
 
@@ -53,5 +73,15 @@ public class Player : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         _grounded = false;
+    }
+
+    public bool IsUse()
+    {
+        return _isUse;
+    }
+
+    public bool IsWalking()
+    {
+        return _isWalking;
     }
 }
