@@ -5267,6 +5267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4656335081287394168, guid: 34314312fb2edfd4b9ecf9fff7808dd7, type: 3}
+      propertyPath: _prefabBullet
+      value: 
+      objectReference: {fileID: 5919161806253430353, guid: 7fcb8321350a5a24caf64813e8c324f1, type: 3}
     - target: {fileID: 4656335081287394171, guid: 34314312fb2edfd4b9ecf9fff7808dd7, type: 3}
       propertyPath: m_ClearFlags
       value: 2
@@ -5283,6 +5287,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4656335082834216627, guid: 34314312fb2edfd4b9ecf9fff7808dd7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a92bf2aff9477d949ac8115aaeb2379e, type: 3}
     - target: {fileID: 9111935359960271667, guid: 34314312fb2edfd4b9ecf9fff7808dd7, type: 3}
       propertyPath: m_CastShadows
       value: 0
