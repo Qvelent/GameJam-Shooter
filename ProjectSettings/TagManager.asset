@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - Cola
+  - Points
   layers:
   - Default
   - TransparentFX
