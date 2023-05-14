@@ -36,11 +36,6 @@ public class CameraController : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        Fire();
-    }
-
     public void CursorLock()
     {
         Cursor.lockState = CursorLockMode.Locked; //заблокировали курсор
@@ -87,10 +82,9 @@ public class CameraController : MonoBehaviour
     /// <summary>
     /// Создает префаб пули, при нажатии левой кнопки мыши
     /// </summary>
-    void Fire()
+    public void Fire()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
+        
             Transform trans = this.transform;
             GameObject newBullet = Instantiate(_prefabBullet, trans.position, trans.rotation) as GameObject;
             Physics.IgnoreCollision(_playerColider, newBullet.GetComponent<Collider>());
@@ -99,6 +93,6 @@ public class CameraController : MonoBehaviour
             _shotSound.Play();
 
             bulletRB.velocity = this.transform.forward * bulletSpeed; // Используем velocity, вместе AddForce, чтобы пули не тянуло гравитацией вниз
-        }
+
     }
 }

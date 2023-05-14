@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] bool _grounded = false;
     [SerializeField] private bool _isWalking = false;
     private bool _isUse = false;
+    private bool _isFire = false;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -35,15 +36,28 @@ public class Player : MonoBehaviour
         {
             _isWalking = false;
         }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             _isUse = true;
-            
+
         }
         else
         {
             _isUse = false;
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            _isFire = true;
+
+        }
+        else
+        {
+            _isFire = false;
+        }
+
+
+
     }
 
     private void FixedUpdate()
@@ -75,6 +89,23 @@ public class Player : MonoBehaviour
         _grounded = false;
     }
 
+    public void StartTrigger(KeyCode key, bool trigger)
+    {
+        if (Input.GetKeyDown(key))
+        {
+            trigger = true;
+
+        }
+        else
+        {
+            trigger = false;
+        }
+    }
+
+    public bool IsFire()
+    {
+        return _isFire;
+    }
     public bool IsUse()
     {
         return _isUse;

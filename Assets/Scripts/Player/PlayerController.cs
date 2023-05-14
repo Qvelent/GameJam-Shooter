@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         PlayerReset();
     }
 
-    
+
     /// <summary>
     /// Задает перемещение игрока
     /// </summary>

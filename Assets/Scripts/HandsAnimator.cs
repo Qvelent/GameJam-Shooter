@@ -22,6 +22,10 @@ public class HandsAnimator : MonoBehaviour
         {
             _animator.SetTrigger("isUse");
         }
+        if (_player.IsFire())
+        {
+            _animator.SetTrigger("isFire");
+        }
         
     }
 }
