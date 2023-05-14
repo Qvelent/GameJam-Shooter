@@ -12,13 +12,14 @@ public class ButtonPhysic : MonoBehaviour
 
   
     private void OnMouseOver()
-    { 
-            text.text = "Press E";
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                buttonPress.Invoke();
-            } 
+    {
+        text.text = "Press E";
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            buttonPress.Invoke();
+        }
     }
+
 
     public void SetEmissionMax(int index)
     {
