@@ -11,7 +11,7 @@ public class EnterTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(_tag));
+        if (!other.gameObject.CompareTag(_tag)) return;
 
         _action?.Invoke(other.gameObject);
     }
