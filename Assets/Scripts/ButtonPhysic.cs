@@ -9,15 +9,29 @@ public class ButtonPhysic : MonoBehaviour
     [SerializeField] UnityEvent buttonPress;
     [SerializeField] TMP_Text text;
     [SerializeField] private Renderer[] _renderers;
+    [SerializeField] private GameObject player;
 
-  
+    private void Start()
+    {
+        player = FindObjectOfType<Player>().gameObject;
+    }
+
     private void OnMouseOver()
     {
-        text.text = "Press E";
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Vector3.Distance(transform.position, player.transform.position) < 6)
         {
-            buttonPress.Invoke();
+            text.text = "Press E";
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                buttonPress.Invoke();
+            }
         }
+
+        if (Vector3.Distance(transform.position, player.transform.position) > 6)
+        {
+            text.text = "";
+        }
+
     }
 
 
@@ -32,6 +46,8 @@ public class ButtonPhysic : MonoBehaviour
 
     private void OnMouseExit()
     {
-        text.text = "";
+       text.text = "";
+        
+        
     }
 }

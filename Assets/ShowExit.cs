@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowExit : MonoBehaviour
 {
-    int _countConditions = 0;
+    [SerializeField] int _countConditions = 0;
     [SerializeField] int _maxConditions = 3;
 
     private void Start()

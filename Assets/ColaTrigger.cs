@@ -8,9 +8,11 @@ public class ColaTrigger : MonoBehaviour
     [SerializeField] private int _countColaMax = 6;
     [SerializeField] private int _countCola = 0;
 
-    private void OnCollisionEnter(Collision collision)
+    
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Cola")
+        if (other.gameObject.tag == "Cola")
         {
             _countCola++;
         }
@@ -19,6 +21,5 @@ public class ColaTrigger : MonoBehaviour
         {
             _showExit.CountSuccess();
         }
-
     }
 }
