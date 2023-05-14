@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PumkinHitCollision : MonoBehaviour
 {
-    [SerializeField] GameObject[] lights;
+    [SerializeField] GameObject lights;
+    [SerializeField] Light light;
 
     private void Start()
     {
-        for (int i = 0; i < lights.Length; i++)
-        {
-            lights[i].SetActive(false);
-        }
+        light = lights.GetComponent<Light>();
+        light.enabled = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -19,10 +18,7 @@ public class PumkinHitCollision : MonoBehaviour
         Debug.Log("Hit");
         if (collision.gameObject.GetComponent<BulletController>())
         {
-            for (int i = 0; i < lights.Length; i++)
-            {
-                lights[i].SetActive(true);
-            }
+            light.enabled = true;
         }
     }
 }
