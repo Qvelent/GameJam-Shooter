@@ -15,7 +15,7 @@ public class Car : MonoBehaviour
 
     void FixedUpdate()
     {
-        _rigibody.AddForce(transform.forward * force);
-        _rigibody.AddTorque(transform.up * angleChangeSpeed);
+        _rigibody.AddForce(transform.forward * force, ForceMode.VelocityChange);
+        _rigibody.AddTorque(transform.up * angleChangeSpeed, ForceMode.VelocityChange);
     }
 }

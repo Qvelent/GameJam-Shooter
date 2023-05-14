@@ -92,7 +92,7 @@ public class CameraController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Transform trans = this.transform;
-            GameObject newBullet = Instantiate(_prefabBullet, trans.position + new Vector3(0, -0.5f, 0), trans.rotation) as GameObject;
+            GameObject newBullet = Instantiate(_prefabBullet, trans.position, trans.rotation) as GameObject;
             Physics.IgnoreCollision(_playerColider, newBullet.GetComponent<Collider>());
             Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
             _shotSound.pitch = Random.Range(0.8f, 1.2f);
