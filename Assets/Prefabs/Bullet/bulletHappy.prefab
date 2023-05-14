@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 9217311849222375636}
   m_Layer: 0
   m_Name: bulletHappy
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
