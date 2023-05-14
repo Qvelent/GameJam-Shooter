@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: -2909289939872609601
     second: cassette
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic
+    second: {fileID: 2100000, guid: e5d78a3c181ddd340acdff65d9cf19f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 54cc6322d681e4e4daf03579b9ee8a35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Net
+    second: {fileID: 2100000, guid: aea8ab57357a2084a8c09dafe803663e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cassette
+    second: {fileID: 2100000, guid: a878375bf019b0147ac2d5618c0896ec, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

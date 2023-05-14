@@ -10,14 +10,14 @@ public class ButtonPhysic : MonoBehaviour
     [SerializeField] TMP_Text text;
     [SerializeField] private Renderer[] _renderers;
 
-
+  
     private void OnMouseOver()
-    {
-        text.text = "Press E";
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            buttonPress.Invoke();
-        }
+    { 
+            text.text = "Press E";
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                buttonPress.Invoke();
+            } 
     }
 
     public void SetEmissionMax(int index)
