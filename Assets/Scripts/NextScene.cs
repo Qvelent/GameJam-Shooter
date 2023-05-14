@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
+    
+    [SerializeField] private string sceneManager;
+
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(6);
-         SceneManager.LoadScene("Scene_2");
+         SceneManager.LoadScene(sceneManager);
     }
 
     public void StartCoroutine()
