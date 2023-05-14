@@ -341,53 +341,26 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: bossWeapon
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     skeleton:
     - name: T-Pose (1)(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: head_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: cloth_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: pants_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: hand_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
     - name: body_lowpoly
       parentName: T-Pose (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
       scale: {x: 100, y: 100, z: 100}
-    - name: button_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: line_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: sole_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: pocket_lowpoly
+    - name: button02_lowpoly
       parentName: T-Pose (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
@@ -402,22 +375,7 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
       scale: {x: 100, y: 100, z: 100}
-    - name: shoes03_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: shoes_lowpoly
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: line_lowpoly.000
-      parentName: T-Pose (1)(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: shoes02_lowpoly
+    - name: button_lowpoly
       parentName: T-Pose (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
@@ -427,12 +385,27 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
       scale: {x: 100, y: 100, z: 100}
-    - name: button02_lowpoly
+    - name: cloth_lowpoly
       parentName: T-Pose (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
       scale: {x: 100, y: 100, z: 100}
-    - name: shoes03_lowpoly001
+    - name: hand_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: head_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: line_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: line_lowpoly.000
       parentName: T-Pose (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
@@ -465,6 +438,31 @@ ModelImporter:
     - name: mixamorig:LeftToe_End
       parentName: mixamorig:LeftToeBase
       position: {x: 2.496084e-10, y: 0.35440895, z: 4.3989985e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.5201154, y: -0.29455793, z: 0.067884915}
+      rotation: {x: -0.0014894884, y: -0.0062540686, z: 0.9999785, w: -0.0013353247}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: -0.000000008744386, y: 2.5643084, z: -0.0000000010073083}
+      rotation: {x: -0.01781921, y: 0.000020958545, z: -0.0029132783, w: 0.99983704}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: -5.5721583e-10, y: 2.2828274, z: -0.0000000017185585}
+      rotation: {x: 0.47527492, y: 0.034463175, z: 0.03177648, w: 0.8785877}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: -0.0000000011432633, y: 0.89673775, z: 0.000000008683575}
+      rotation: {x: 0.31185502, y: -0.07914363, z: 0.026077293, w: 0.9464686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: -6.7127304e-10, y: 0.35753393, z: 2.1341975e-10}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Spine
@@ -577,31 +575,46 @@ ModelImporter:
       position: {x: -0.0056443857, y: 0.054003447, z: -0.110099114}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:RightUpLeg
-      parentName: mixamorig:Hips
-      position: {x: 0.5201154, y: -0.29455793, z: 0.067884915}
-      rotation: {x: -0.0014894884, y: -0.0062540686, z: 0.9999785, w: -0.0013353247}
-      scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:RightLeg
-      parentName: mixamorig:RightUpLeg
-      position: {x: -0.000000008744386, y: 2.5643084, z: -0.0000000010073083}
-      rotation: {x: -0.01781921, y: 0.000020958545, z: -0.0029132783, w: 0.99983704}
-      scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:RightFoot
-      parentName: mixamorig:RightLeg
-      position: {x: -5.5721583e-10, y: 2.2828274, z: -0.0000000017185585}
-      rotation: {x: 0.47527492, y: 0.034463175, z: 0.03177648, w: 0.8785877}
-      scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:RightToeBase
-      parentName: mixamorig:RightFoot
-      position: {x: -0.0000000011432633, y: 0.89673775, z: 0.000000008683575}
-      rotation: {x: 0.31185502, y: -0.07914363, z: 0.026077293, w: 0.9464686}
-      scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:RightToe_End
-      parentName: mixamorig:RightToeBase
-      position: {x: -6.7127304e-10, y: 0.35753393, z: 2.1341975e-10}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+    - name: pants_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: pocket_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: shoes02_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: shoes03_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: shoes03_lowpoly001
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: shoes_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: sole_lowpoly
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: bossWeapon
+      parentName: T-Pose (1)(Clone)
+      position: {x: 4.14, y: 8.012, z: 0}
+      rotation: {x: 0.75546086, y: 0.6443079, z: -0.018295236, w: 0.11752255}
+      scale: {x: 100.00001, y: 100, z: 100}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
